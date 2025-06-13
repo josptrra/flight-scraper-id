@@ -14,7 +14,6 @@ export const scrapeFlights = async (req: Request, res: Response) => {
   const { airport_code } = req.body;
 
   try {
-    // TODO: panggil fungsi dari services/flightradarService.ts
     res.json({
       message: `Scraping data untuk bandara ${airport_code} sedang berjalan...`,
     });
@@ -24,6 +23,5 @@ export const scrapeFlights = async (req: Request, res: Response) => {
 };
 
 export const exportFlights = async (req: Request, res: Response) => {
-  // TODO: buat fitur export CSV berdasarkan query/filter
   res.send("Export data belum diimplementasikan");
 };
